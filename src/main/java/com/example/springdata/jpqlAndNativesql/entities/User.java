@@ -16,14 +16,14 @@ import lombok.Setter;
 @Table(name = "Airtel_Niger_subscription")
 public class User {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
 	private String msisdn;	
 
-	@Column(name = "ServiceId") 
+	@Column(name = "Serviceid") 
 	private int serviceId;
-	@Column(name = "planType") 
+	@Column(name = "plantype") 
 	private int planType;
 	
 	private String source;
